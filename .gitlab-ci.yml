@@ -5,7 +5,7 @@ deploy:
   stage: deploy
   environment:
     name: production
-    url: https://your.website.com
+    url: https://tutorial2-harshil.netlify.app
   only:
     - master
   script:
