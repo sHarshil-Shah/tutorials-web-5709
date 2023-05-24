@@ -1,15 +1,26 @@
+image: node:latest
+
 stages:
+  - build
   - deploy
 
-deploy:
+cache:
+  paths:
+    - node_modules/
+
+build-job:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - public/
+
+deploy-job:
   stage: deploy
-  environment:
-    name: production
-    url: https://tutorial2-harshil.netlify.app
+  script:
+    - npm install -g netlify-cli
+    - netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --dir public/
   only:
     - master
-  script:
-    - npm i
-    # your build command
-    - npm run build
-    - npx netlify-cli deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
