@@ -11,7 +11,7 @@ cache:
 build-job:
   stage: build
   script:
-    - cd tutorial2
+    - cd tutorial-2
     - npm install
     - npm run build
   artifacts:
