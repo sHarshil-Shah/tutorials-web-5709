@@ -16,10 +16,10 @@ build-job:
     - npm run build
   artifacts:
     paths:
-      - public/
+      - build/
 
 deploy-job:
   stage: deploy
   script:
     - npm install -g netlify-cli
-    - netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --dir tutorial-2/public/
+    - netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --dir tutorial-2/build/
