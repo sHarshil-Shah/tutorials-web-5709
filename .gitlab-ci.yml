@@ -2,7 +2,7 @@ image: node:latest
 
 stages:
   - build
-  - deploy
+  # - deploy
 
 cache:
   paths:
@@ -14,12 +14,12 @@ build-job:
     - cd tutorial-2
     - npm install
     - npm run build
-  artifacts:
-    paths:
-      - build/
-
-deploy-job:
-  stage: deploy
-  script:
     - npm install -g netlify-cli
     - netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --dir tutorial-2/build/
+#   artifacts:
+#     paths:
+#       - build/
+
+# deploy-job:
+#   stage: deploy
+#   script:
