@@ -1,6 +1,7 @@
 {
   "name": "tutorial-2",
   "version": "0.1.0",
+  "homepage": "https://tutorial2-harshil.netlify.app/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
