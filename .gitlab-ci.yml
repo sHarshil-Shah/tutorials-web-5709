@@ -15,7 +15,7 @@ build-job:
     - npm install
     - npm run build
     - npm install -g netlify-cli
-    - netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --dir tutorial-2/build/
+    - netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --dir build/
 #   artifacts:
 #     paths:
 #       - build/
