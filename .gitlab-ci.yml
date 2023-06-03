@@ -3,11 +3,6 @@ image: node:latest
 stages:
   - build
 
-cache:
-  paths:
-    - tutorial-2/build/
-    - tutorial-3/dist/
-
 build-deploy-tutorial-2:
   stage: build
   script:
