@@ -7,7 +7,7 @@ cache:
   paths:
     - node_modules/
 
-build-job:
+build-deploy-tutorial-2:
   stage: build
   script:
     - cd tutorial-2
@@ -15,3 +15,18 @@ build-job:
     - npm run build
     - npm install -g netlify-cli
     - netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --dir build/
+  only:
+    changes:
+      - tutorial-2/*
+
+build-deploy-tutorial-3:
+  stage: build
+  script:
+    - cd tutorial-3
+    - npm install
+    - npm run build
+    - npm install -g netlify-cli
+    - netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID_2 --dir build/
+  only:
+    changes:
+      - tutorial-3/*
