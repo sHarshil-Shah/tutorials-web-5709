@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 const PR = lazy(() => import('./ProfileRegistration'));
 const Profile = lazy(() => import('./Profile'));
 
-
+// router added
 const AppRouter = () => {
     return (
         <Router>
