@@ -31,15 +31,11 @@ const ProfileRegistration = () => {
         if (!firstName.match(lettersOnlyRegex)) {
             setErrorMessage('First name should only contain letters');
             return;
-        } else {
-            setErrorMessage('');
-        }
+        } 
 
         if (!lettersOnlyRegex.test(lastName)) {
             setErrorMessage('Last name should only contain letters');
             return;
-        } else {
-            setErrorMessage('');
         }
 
         const validEmailFormatRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -47,11 +43,17 @@ const ProfileRegistration = () => {
         if (!validEmailFormatRegex.test(email)) {
             setErrorMessage('Last name should only contain letters');
             return;
-        } else {
-            setErrorMessage('');
-        }
+        } 
+    
+        const alphaNumericRegex = /^[a-zA-Z0-9 !@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]*$/;
 
-        if (password !== confirmPassword) {
+        if(!password.match(alphaNumericRegex)){
+            setErrorMessage('Password should only be alpha-neumeric');
+            return;
+        } else if (password.length < 8) {
+            setErrorMessage('Password should be more than or equal to length 8.');
+            return;
+        } else if (password !== confirmPassword) {
             setErrorMessage('Passwords do not match');
             return;
         }
