@@ -5,7 +5,8 @@ stages:
 
 cache:
   paths:
-    - node_modules/
+    - tutorial-2/build/
+    - tutorial-3/dist/
 
 build-deploy-tutorial-2:
   stage: build
@@ -26,7 +27,7 @@ build-deploy-tutorial-3:
     - npm install
     - npm run build
     - npm install -g netlify-cli
-    - netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID_2 --dir build/
+    - netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID_2 --dir dist/
   only:
     changes:
       - tutorial-3/*
