@@ -26,3 +26,15 @@ build-deploy-tutorial-3:
   only:
     changes:
       - tutorial-3/*
+
+build-deploy-tutorial-4:
+  stage: build
+  script:
+    - cd tutorial-4
+    - npm install
+    - npm run build
+    - npm install -g netlify-cli
+    - netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID_3 --dir build/
+  only:
+    changes:
+      - tutorial-4/*
