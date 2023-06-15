@@ -25,9 +25,6 @@ build-deploy-tutorial-3:
     - netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID_2 --dir dist/
   only:
     changes:
-<<<<<<< HEAD
-      - tutorial-3/*
-=======
       - tutorial-3/*
 
 build-deploy-tutorial-4:
@@ -41,4 +38,3 @@ build-deploy-tutorial-4:
   only:
     changes:
       - tutorial-4/*
->>>>>>> 8c89379b52eda349c26d6719d4c97594dded462a
