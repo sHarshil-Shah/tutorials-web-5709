@@ -1,16 +1,12 @@
 <!--- The following README.md sample file was adapted from https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md by Gabriella Mosquera for academic use ---> 
-<<<<<<< HEAD
 <!--- You may delete any comments in this sample README.md file. If needing to use as a .txt file then simply delete all comments, edit as needed, and save as a README.txt file --->
-=======
 
->>>>>>> 8c89379b52eda349c26d6719d4c97594dded462a
+# Tutorial 4
 
-# Tutorial 3
-
-* *Date Created*: 03 Jun 2023
-* *Last Modification Date*: 03 Jun 2023
-* *Lab URL*: <https://tutorial3-harshil.netlify.app/>
-* *Git URL*: <https://git.cs.dal.ca/harshils/5709-tutorial-b00919966-harshil/-/tree/main/tutorial-3>
+* *Date Created*: 13 Jun 2023
+* *Last Modification Date*: 13 Jun 2023
+* *Lab URL*: <https://tutorial4-harshil.netlify.app/>
+* *Git URL*: <https://git.cs.dal.ca/harshils/5709-tutorial-b00919966-harshil/-/tree/main/tutorial-4>
 
 ## Authors
 
@@ -34,19 +30,14 @@ GitLab CD deploy directly to website. Seperate CD for all tutorial.
 <!--- Provide a list of the frameworks used to build this application, your list should include the name of the framework used, the url where the framework is available for download and what the framework was used for, see the example below --->
 
 * [React](https://react.dev/) - The web framework used
-* [Vite](https://vitejs.dev/) - Build Tool
 
 
 ## Sources Used
 
-### Folder Structure and build configuration using Vite from Individual Submission Assignment 1
+### Folder Structure and build configuration from Individual Submission Assignment 1
 
 ```folders structure```
 
 The code above was created by adapting the code:
 
-<<<<<<< HEAD
 ```Same Structure followed```
-=======
-```Same Structure followed```
->>>>>>> 8c89379b52eda349c26d6719d4c97594dded462a
