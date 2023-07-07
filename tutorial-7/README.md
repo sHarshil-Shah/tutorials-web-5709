@@ -1,12 +1,12 @@
 <!--- The following README.md sample file was adapted from https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md by Gabriella Mosquera for academic use ---> 
 <!--- You may delete any comments in this sample README.md file. If needing to use as a .txt file then simply delete all comments, edit as needed, and save as a README.txt file --->
 
-# Tutorial 5
+# Tutorial 7
 
-* *Date Created*: 3 July 2023
-* *Last Modification Date*: 3 July 2023
-* *Lab URL*: <https://tutorial5-harshil.onrender.com>
-* *Git URL*: <https://git.cs.dal.ca/harshils/5709-tutorial-b00919966-harshil/-/tree/main/tutorial-5>
+* *Date Created*: 7 July 2023
+* *Last Modification Date*: 7 July 2023
+* *Lab URL*: <https://tutorial7-harshil.onrender.com>
+* *Git URL*: <https://git.cs.dal.ca/harshils/5709-tutorial-b00919966-harshil/-/tree/main/tutorial-7>
 
 ## Authors
 
@@ -18,6 +18,7 @@
 
 Manual testing for each field validation and data passing validation across pages.
 All HTTP codes are handled from backend
+Postman export file is there for manual testing
 
 
 
@@ -35,7 +36,7 @@ Deployment is done from Github repo.
 
 ## Sources Used
 
-### Folder Structure and build configuration from Individual Submission Assignment 2 backend
+### Folder Structure and build configuration from Individual Submission Tutorial 5 backend
 
 ```folders structure```
 
